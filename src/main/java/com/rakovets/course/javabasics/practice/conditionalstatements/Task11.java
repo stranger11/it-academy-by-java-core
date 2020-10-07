@@ -29,5 +29,15 @@ public class Task11 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        if ( letter >= 65 && letter <= 90 || letter >= 97 && letter <= 122) {
+            System.out.println("latin");
+        } else if (letter >= 1040 && letter <= 1113){
+            System.out.println("cyrillic");
+        } else if (letter >= 48 && letter <= 57){
+            System.out.println("digit");
+        } else {
+            System.out.println("underfind");
+        }
+
     }
 }

@@ -24,19 +24,15 @@ public class Task02 {
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
 
 
-        if (hour > 12) {
-            if (hour > 18) {
-                System.out.println("Good evening!");
-            } else {
-                System.out.println("Good day");
-            }
-        } else {
-            if (12 > hour) {
-                System.out.println("Good morning!");
-            } else {
-                System.out.println("Good day!");
-            }
-
+        if (hour < 5) {
+            System.out.print ("Good night");
+        } else if (hour < 12) {
+            System.out.print ("Good morning");
+        } else if (hour < 17) {
+            System.out.print ("Good day");
+        } else if (hour < 24) {
+            System.out.print ("Good evening");
         }
     }
 }
+

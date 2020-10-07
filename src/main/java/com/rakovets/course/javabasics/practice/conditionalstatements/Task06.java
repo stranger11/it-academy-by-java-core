@@ -22,6 +22,7 @@ public class Task06 {
         // Ввод данных осуществляется в Console, для проверки различных вариантов входных параметров
 
         // Код необходимый для тестирования, не изменять
+
         Scanner scanner = new Scanner(System.in);
         int tanksKilledFirstPlayer = (args.length != 2) ? scanner.nextInt() : Integer.parseInt(args[0]);
         int tanksKilledSecondPlayer = (args.length != 2) ? scanner.nextInt() : Integer.parseInt(args[1]);
@@ -29,5 +30,17 @@ public class Task06 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        int tanks1 = tanksKilledFirstPlayer * KILL_POINT;
+        int tanks2 = tanksKilledSecondPlayer * KILL_POINT;
+        if (tanksKilledFirstPlayer > tanksKilledSecondPlayer) {
+            tanks1 += BONUS_POINT;
+        } else if (tanksKilledFirstPlayer < tanksKilledSecondPlayer) {
+            tanks2 += BONUS_POINT;
+        }
+
+        System.out.println("Player 1: " + tanks1 + ". " + "Player 2: " + tanks2);
+
+
+
     }
 }

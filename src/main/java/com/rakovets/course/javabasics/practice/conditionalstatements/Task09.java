@@ -25,5 +25,21 @@ public class Task09 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        int f = apartmentNumber / numberApartmentsPerFloor;
+        int c = f % numberFloors;
+        double a = (double)apartmentNumber / (double)numberApartmentsPerFloor;
+        double w = a / (double)numberFloors;
+        double g = a % (double)numberFloors;
+        double q = w + g;
+        if (q == w & f == numberFloors ) {
+            System.out.print("Porch:"+" "+(int)w+"."+" "+"Floor"+":"+" "+numberFloors);
+        } else if (q > w & f != numberFloors) {
+            System.out.print("Porch:"+" "+((int)w+1)+"."+" "+"Floor"+":"+" "+(c+1));
+        }
     }
 }
+
+
+
+
+

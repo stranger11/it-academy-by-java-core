@@ -23,5 +23,43 @@ public class Task05 {
         //TODO
         // Код, решающий задачу пишем ниже, при этом используяся переменные объявленные выше (их можно изменять)
         // Для проверки решения необходимо запустить @Test для данного class (в директории test)
+        switch (monthNumber) {
+            case 1:
+                System.out.print ("JANUARY");
+                break;
+            case 2:
+                System.out.print ("FEBRUARY");
+                break;
+            case 3:
+                System.out.print ("MARCH");
+                break;
+            case 4:
+                System.out.print ("APRIL");
+                break;
+            case 5:
+                System.out.print ("MAY");
+                break;
+            case 6:
+                System.out.print ("JUNE");
+                break;
+            case 7:
+                System.out.print ("JULY");
+                break;
+            case 8:
+                System.out.print ("AUGUST");
+                break;
+            case 9:
+                System.out.print ("SEPTEMBER");
+                break;
+            case 10:
+                System.out.print ("OCTOBER");
+                break;
+            case 11:
+                System.out.print ("NOVEMBER");
+                break;
+            case 12:
+                System.out.print ("DECEMBER");
+                break;
+        }
     }
 }
